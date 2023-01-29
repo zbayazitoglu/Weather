@@ -65,7 +65,7 @@ function getData(callTerm) {
 }
 
 function setCurrentData(response) {
-    var iconurl = "http://openweathermap.org/img/w/" + response.weather[0].icon+ ".png";
+    var iconurl = "https://openweathermap.org/img/w/" + response.weather[0].icon+ ".png";
     $("#current-icon").attr("src",iconurl);
     var day= moment().get("date");
     var month = moment().get("month") + 1;
@@ -78,31 +78,31 @@ function setCurrentData(response) {
 }
 
 function setForecastData(resp) {
-    var iconurl1 = "http://openweathermap.org/img/w/" + resp.list[3].weather[0].icon+ ".png";
+    var iconurl1 = "https://openweathermap.org/img/w/" + resp.list[3].weather[0].icon+ ".png";
             $("#icon1").attr("src",iconurl1);
             $("#title1").text((resp.list[3].dt_txt.split(" "))[0]);
             $("#temp1").text("Temp: " + resp.list[3].main.temp + " °C");
             $("#wind1").text("Wind: " + resp.list[3].wind.speed + " KPH");
             $("#hum1").text("Humidity: " + resp.list[3].main.humidity + "%");
-    var iconurl2 = "http://openweathermap.org/img/w/" + resp.list[11].weather[0].icon+ ".png";
+    var iconurl2 = "https://openweathermap.org/img/w/" + resp.list[11].weather[0].icon+ ".png";
             $("#icon2").attr("src",iconurl2);
             $("#title2").text((resp.list[11].dt_txt.split(" "))[0]);
             $("#temp2").text("Temp: " + resp.list[11].main.temp + " °C");
             $("#wind2").text("Wind: " + resp.list[11].wind.speed + " KPH");
             $("#hum2").text("Humidity: " + resp.list[11].main.humidity + "%");
-    var iconurl3 = "http://openweathermap.org/img/w/" + resp.list[19].weather[0].icon+ ".png";
+    var iconurl3 = "https://openweathermap.org/img/w/" + resp.list[19].weather[0].icon+ ".png";
             $("#icon3").attr("src",iconurl3);
             $("#title3").text((resp.list[19].dt_txt.split(" "))[0]);
             $("#temp3").text("Temp: " + resp.list[19].main.temp + " °C");
             $("#wind3").text("Wind: " + resp.list[19].wind.speed + " KPH");
             $("#hum3").text("Humidity: " + resp.list[19].main.humidity + "%");
-    var iconurl4 = "http://openweathermap.org/img/w/" + resp.list[27].weather[0].icon+ ".png";
+    var iconurl4 = "https://openweathermap.org/img/w/" + resp.list[27].weather[0].icon+ ".png";
             $("#icon4").attr("src",iconurl4);
             $("#title4").text((resp.list[27].dt_txt.split(" "))[0]);
             $("#temp4").text("Temp: " + resp.list[27].main.temp + " °C");
             $("#wind4").text("Wind: " + resp.list[27].wind.speed + " KPH");
             $("#hum4").text("Humidity: " + resp.list[27].main.humidity + "%");
-    var iconurl5 = "http://openweathermap.org/img/w/" + resp.list[35].weather[0].icon+ ".png";
+    var iconurl5 = "https://openweathermap.org/img/w/" + resp.list[35].weather[0].icon+ ".png";
             $("#icon5").attr("src",iconurl5);
             $("#title5").text((resp.list[35].dt_txt.split(" "))[0]);
             $("#temp5").text("Temp: " + resp.list[35].main.temp + " °C");
